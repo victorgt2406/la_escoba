@@ -1,0 +1,623 @@
+ /*CSS*/
+*{
+	padding:0px;
+	margin: 0px;
+}
+/*letras*/
+h1{
+	color: #FFF;
+	font-family:calibri;
+	font-size: 40px;
+}
+h3{
+	font-size: 20px;
+	color: #FFF;
+	font-family:arial;
+}
+h4{
+	color: #FFF;
+	font-family:Calibri light;
+}
+
+/*MARCADOR*/
+#marcador{
+	display: flex;
+	justify-content: space-around;
+	background-color: #151515;
+}
+
+.p_marcador{
+	font-size: 15px;
+	color: #FFF;
+	font-family:calibri light;
+}
+
+.span_marcador{
+	font-size: 16px;
+	color: #d99228;
+	font-family:calibri;
+}
+
+.span_marcador_nombre{
+    font-size: 20px;
+	color: #f80000;
+	font-family:calibri;
+}
+
+/*ESTRUCTURA*/
+body{
+	background-color: #1a1a1a;
+}
+nav{
+	background-color: #000000;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.right_nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*ICONOS*/
+
+.settings{
+	margin-left: 30px;
+	width: 48px;
+	height: 48px;
+}
+
+.settings:hover{
+	cursor: pointer;
+}
+
+#close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 24px;
+}
+
+#close:hover{
+	cursor: pointer;
+}
+
+/*BOTONES*/
+.button_save{
+	font-family:calibri light;
+	margin: 2px;
+	font-size: 15px;
+	background-color: #252525;
+	border: 0.1px solid #b9b9b9;
+	border-radius: 1px;
+	color: #b9b9b9;
+}
+
+.button_save:hover{
+    color: #FFF;
+    border: 0.1px solid #FFF;
+}
+.nav_button{
+	font-family:calibri light;
+	padding: 5px;
+	background-color: #000000;
+	border: 0.1px solid #b9b9b9;
+	border-radius: 1px;
+	color: #b9b9b9;
+}
+.nav_button:hover{
+	color: #FFF;
+    border: 0.1px solid #FFF;
+}
+
+/*FORM*/
+.text{
+	margin: 2px;
+	font-size: 15px;
+	background-color: #252525;
+    border: 0.1px solid #a8a8a8;
+	outline: none;
+	font-family:calibri;
+	color: #FF5722;
+}
+.text:hover{
+	border: 0.1px solid #FFF;
+}
+.text::placeholder{
+	color: #a8a8a8a2a;
+}
+
+/*SCREEN*/
+
+#ajustes{
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 100px;
+	width:60%;
+	height: 200px;
+
+	background-color: #252525;
+	border: 1px solid black;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*SECTION 2*/
+#box_2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*JUGADA*/
+#jugada{
+	margin-top: 5px;
+	background-color: #0f0f0f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation-name: jugada;
+    animation-duration: 2s;
+}
+
+@keyframes jugada{
+   from {
+        opacity:0;
+	}
+	to{
+		opacity:1;
+	}	
+}
+
+#box_jugada{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.box_jugada_cartaMazo{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	border: 2.5px solid #FF9800;
+}
+.box_jugada_carta{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    margin: 10px;
+	border: 2.5px;
+}
+
+.jugada_carta_oros{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-family:calibri;
+	background-color: #ffbf00;
+	width: 45px;
+	height: 60px;
+    font-size: 40px;
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+.jugada_carta_copas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-family:calibri;
+	background-color: #f80000;
+	width: 45px;
+	height: 60px;
+    font-size: 40px;
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+.jugada_carta_espadas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-family:calibri;
+	background-color: #848482;
+	width: 45px;
+	height: 60px;
+    font-size: 40px;
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+.jugada_carta_bastos{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-family:calibri;
+	background-color: #39ff14;
+	width: 45px;
+	height: 60px;
+    font-size: 40px;
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+.jugada_texto{
+	font-family:calibri light;
+	color: #ffffff;
+	font-size: 12.5px;
+}
+
+/*DISPLAY FLEX*/
+.column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+/*CARTAS TABLERO*/
+#tablero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #130026;
+}
+#box_tablero{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.box_tablero_carta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px;
+}
+
+.tablero_texto{
+	font-family:calibri light;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.tablero_carta_oros{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 60px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #ffbf00;
+	width: 67px;
+	height: 90px;
+}
+
+.tablero_carta_copas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 60px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #f80000;
+	width: 67px;
+	height: 90px;
+}
+
+.tablero_carta_espadas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 60px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #848482;
+	width: 67px;
+	height: 90px;
+}
+
+.tablero_carta_bastos{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 60px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #39ff14;
+	width: 67px;
+	height: 90px;
+}
+
+/*CARTAS MAZO*/
+#mazo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 10px;
+	background-color: #000d54;
+	width: 100%;
+	border-radius: 4px;
+
+}
+#box_mazo{
+	display: flex;
+	flex-wrap: wrap;
+}
+.box_mazo_carta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 10px;
+	width: 100px;
+	border: 2.5px solid #1a1a1a;
+	border-radius: 3px;
+}
+
+.box_mazo_carta:hover{
+	border: 2.5px solid white;
+	cursor: pointer;
+}
+
+.mazo_carta_oros{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 80px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #ffbf00;
+	width: 90px;
+	height: 120px;
+}
+
+.mazo_carta_copas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 80px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #f80000;
+	width: 90px;
+	height: 120px;
+}
+
+.mazo_carta_espadas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 80px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #848482;
+	width: 90px;
+	height: 120px;
+}
+
+.mazo_carta_bastos{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 80px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #39ff14;
+	width: 90px;
+	height: 120px;
+}
+
+/*OPCIONES CARTAS*/
+#opciones{
+	margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#contenido_opciones{
+	display: flex;
+	flex-wrap: wrap;
+}
+.box_opcion{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	border: 1px solid #7a7a7a;
+	border-radius: 2px;
+    margin-right: 10px;
+}
+
+.box_opcion:hover{
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+.box_opcion_cartaMazo{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 60px;
+	border: 2px solid #fe7900;
+	border-radius: 3px;
+}
+
+.box_opcion_carta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 50px;
+	border: 2.5px solid #1a1a1a;
+	border-radius: 3px;
+}
+
+.opciones_texto{
+	color: #ffffff;
+	font-family:calibri light;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px;
+}
+
+.opciones_carta_oros{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 40px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #ffbf00;
+	width: 45px;
+	height: 60px;
+}
+
+.opciones_carta_copas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 40px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #f80000;
+	width: 45px;
+	height: 60px;
+}
+
+.opciones_carta_espadas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 40px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #848482;
+	width: 45px;
+	height: 60px;
+}
+
+.opciones_carta_bastos{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	color: #1a1a1a;
+	font-size: 40px;
+	border: 1px solid #ff9800;
+	border-radius: 2px;
+	font-family:calibri;
+	background-color: #39ff14;
+	width: 45px;
+	height: 60px;
+}
+
+/*FINAL*/
+#final{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: 30%;
+	margin-right: 30%;	
+}
+
+.box_final{
+	border: 2px solid #FF9800;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+}
+
+.texto_final_nombre{
+	color: #ffffff;
+	font-family:calibri light;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+}
+
+.texto_final_puntos{
+	color: #F44336;
+	font-family:calibri light;
+	font-size: 22px;
+	text-align: center;
+	margin: 0px;
+}
+
+.marcador_final{
+}
+.texto_final_marcador{
+	color: #ffffff;
+	font-family:calibri light;
+	font-size: 16px;
+	padding: 0px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.span_final_marcador{
+	color: #CDDC39;
+	font-family:calibri light;
+	font-size: 16px;
+	margin-left: 10px;
+
+}
+
